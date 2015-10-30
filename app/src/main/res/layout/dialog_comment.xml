@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_comment_user_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_dialog_comment_user_picture"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="80dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_comment_user_name"
+            android:layout_marginLeft="8dp"
+            android:text="User Name"
+            style="@style/customTextView"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_dialog_comment"
+        android:text="Comentário"
+        style="@style/detailTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_below="@+id/ll_dialog_comment_user_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_dialog_comment_content"
+        android:layout_below="@+id/tv_dialog_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

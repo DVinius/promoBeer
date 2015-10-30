@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+    //adicione este trecho para detectar bibliotecas *.aar presentes na pasta /lib
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "br.com.vsgdev.promobeer"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.android.support:design:23.1.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.android.support:cardview-v7:23.1.0'
+    compile 'com.android.support:recyclerview-v7:23.1.0'
+    //importe no projeto a biblioteca especificada (*.aar)
+    compile(name:'cursomobilelibrary-debug', ext:'aar')
+}

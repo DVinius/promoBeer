@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PromoBeer</string>
+    <string name="login_message">Find the best beer offers around you</string>
+    <string name="facebook_app_id" translatable="false">180863492250955</string>
+    <string name="btn_add_promo_item">Add New Item</string>
+    <string name="new_item">New Promo/Price</string>
+    <string name="item_name_hint">Item Name</string>
+    <string name="price">Price</string>
+    <string name="place">Place</string>
+    <string name="obs">Note</string>
+
+    <string-array name="picture_options">
+        <item>Galeria</item>
+        <item>Câmera</item>
+    </string-array>
+</resources>

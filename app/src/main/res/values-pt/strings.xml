@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PromoBeer</string>
+    <string name="login_message">Localize preços e promoções de cervejas, bebidas e materiais para churrasco. Acompanhe promoções!</string>
+    <string name="btn_add_promo_item">Adicionar Item</string>
+    <string name="new_item">Novo Item</string>
+    <string name="item_name_hint">Nome</string>
+    <string name="price">Preço</string>
+    <string name="place">Local (Supermercado)</string>
+    <string name="obs">Observação (quente, últimas unidades, poucos meses para vencer, etc)</string>
+</resources>

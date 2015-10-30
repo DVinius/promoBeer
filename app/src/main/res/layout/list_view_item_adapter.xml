@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="6dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_item_list_created_at"
+        android:text="dd/MM/YY"
+        style="@style/detailTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_item_list_picture"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginRight="6dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp" />
+
+    <TextView
+        android:id="@+id/tv_item_list_name"
+        style="@style/customTextView"
+        android:text="Montilla"
+        android:layout_toRightOf="@+id/iv_item_list_picture"
+        android:layout_toEndOf="@+id/iv_item_list_picture"
+        android:layout_below="@+id/tv_item_list_created_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_item_list_price_place"
+        style="@style/detailTextView"
+        android:text="R$ 17.90 - Carvalho Supermercado"
+        android:layout_toRightOf="@+id/iv_item_list_picture"
+        android:layout_toEndOf="@+id/iv_item_list_picture"
+        android:layout_below="@+id/tv_item_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
