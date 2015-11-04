@@ -80,14 +80,15 @@ public class NewItemActivity extends AppCompatActivity implements View.OnClickLi
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
             //cria o diretorio onde serao armazenadas as imagens
             //final File dir = new File(getCacheDir(), "internal");
-            File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + getString(R.string.app_name));
+            File dir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getAbsolutePath());
+            /*
             final boolean makeDir = dir.mkdirs();
             if (makeDir) {
                 Log.i(MainActivity.class.getName(), "Directory created");
             } else {
                 Log.i(MainActivity.class.getName(), "Directory already exists");
             }
-
+            */
             //cria arquivo temporario para salvar foto
             File imageFile = null;
             if (dir.exists()) {
